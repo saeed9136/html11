@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg-img{
+    
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    
+    position: relative;
+}
+.bg-img::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    opacity: 0.5;
+    background-image: url(burger.avif);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.title{
+    color: white;
+    position: relative;
+    text-align: center;
+}
+header{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: blue;
+    align-items: center;
+}
+.logo{
+    color: white;
+    position: relative;
+    font-size: 1.4rem;
+}
+nav a{
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+    header{
+        flex-direction: column;
+    }
+    nav a{
+        display: block;
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .title h1{
+        font-size: 1. 5rem;
+        margin-top: 10px;
+    }
+
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+    
+
+}
+.card{
+    margin-left: 20px;
+    width: 300px;
+    height: 470px;
+    background: #f37a7a;
+    position: relative;
+    box-shadow: 3px 5px 10px black;
+    margin-top: 20px;
+
+}
+.card-img{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+
+}
+.card-img img{
+    width: 100%;
+    height: 75%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.card-title{
+    position: absolute;
+    left: 0px;
+    height: 100px;
+    overflow: hidden;
+   
+    bottom: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(106, 106, 194);
+    color: white;
+    transition: all 2s ;
+    
+   
+}
+.card:hover .card-title{
+    width: 100%;
+    height: 75%;
+    bottom: 0;
+    left: 0px;
+}
+.card-title p{
+    transform: translate(1rem);
+}
+.btn{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+button{
+    background-color: red;
+    width: 100%;
+    color: white;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}
